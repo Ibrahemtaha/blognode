@@ -1,0 +1,39 @@
+<div class="col-md-6 mt-3 offset-md-3">
+
+  {{>messages}}
+  <div class="card">
+    <article class="card-body">
+
+      <h4 class="card-title mb-4 mt-1">Login Form</h4>
+      <form action="/users/register" method="post">
+        <div class="form-group">
+          <label>Name</label>
+          <input class="form-control" placeholder="Name" type="text" name="name">
+        </div> <!-- form-group// -->
+        <div class="form-group">
+          <label>Your email</label>
+          <input class="form-control" placeholder="Email" type="email" name="email">
+        </div> <!-- form-group// -->
+        <div class="form-group">
+          <a class="float-right" href="#">Forgot?</a>
+          <label>Your password</label>
+          <input class="form-control" placeholder="******" type="password" name="password">
+        </div> <!-- form-group// -->
+        <div class="form-group">
+          <label>Repeat password</label>
+          <input class="form-control" placeholder="password" type="password" name="password2">
+        </div> <!-- form-group// -->
+        <div class="form-group">
+          <div class="checkbox">
+            <label> <input type="checkbox"> Save password </label>
+          </div> <!-- checkbox .// -->
+        </div> <!-- form-group// -->
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block"> Login </button>
+        </div> <!-- form-group// -->
+
+      </form>
+    </article>
+  </div> <!-- card.// -->
+
+</div>
